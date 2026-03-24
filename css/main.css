@@ -2355,7 +2355,7 @@ blockquote {
     }
 
     .lmpixels-arrows-nav {
-        background-color: rgba(255, 255, 255, .6);
+        background-color: #000000;
         width: 48px;
         right: 10px;
         bottom: 10px;
@@ -2802,10 +2802,11 @@ blockquote {
 }
 
 .lmpixels-map iframe {
-    height: 140px;
+    height: 400px;
     max-width: 100%;
     width: 100%;
     margin: 0;
     line-height: 1;
-    border: none
+    border: none;
+    
 }
