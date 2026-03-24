@@ -1,5 +1,3 @@
-/* --- ORIGINAL CODE (unchanged unless noted) --- */
-
 .mfp-bg {
     top: 0;
     left: 0;
@@ -135,13 +133,6 @@ button.mfp-arrow {
     touch-action: manipulation
 }
 
-/* FIX: Remove outline completely */
-button.mfp-close:focus,
-button.mfp-close:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
 button.mfp-close:hover,
 button.mfp-close:visited,
 button.mfp-close:focus,
@@ -149,7 +140,7 @@ button.mfp-arrow:hover,
 button.mfp-arrow:visited,
 button.mfp-arrow:focus {
     background: 0 0;
-    cursor: pointer
+    cursor: pointer;
 }
 
 button::-moz-focus-inner {
@@ -171,16 +162,17 @@ button::-moz-focus-inner {
     color: #fff;
     font-style: normal;
     font-size: 28px;
-    font-family: Arial, Baskerville, monospace;
-    z-index: 9999 !important; /* FIX: ensure above iframe */
+    font-family: Arial, Baskerville, monospace
 }
 
 .mfp-close:hover,
 .mfp-close:focus {
+
     opacity: 1
 }
 
 .mfp-close:active {
+
     top: 1px
 }
 
@@ -188,15 +180,14 @@ button::-moz-focus-inner {
     color: #333
 }
 
-/* FIX: Remove full-width close button + set color + position inside frame */
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-    width: 44px !important;
-    right: 0 !important;
-    top: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-    color: #333 !important; /* visible on light backgrounds */
+    
+    color: #fff;
+    right: -6px;
+    text-align: right;
+    padding-right: 6px;
+    width: 100%
 }
 
 .mfp-counter {
@@ -241,7 +232,8 @@ button::-moz-focus-inner {
     top: 0;
     margin-top: 35px;
     margin-left: 35px;
-    border: medium inset transparent
+    border: medium inset transparent;
+
 }
 
 .mfp-arrow:after {
@@ -251,6 +243,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow:before {
+    
     border-top-width: 21px;
     border-bottom-width: 21px;
     opacity: .7
@@ -294,17 +287,15 @@ button::-moz-focus-inner {
     max-width: 900px
 }
 
-/* FIX: override default -40px offset */
 .mfp-iframe-holder .mfp-close {
-    top: 0 !important;
+    top: -40px
 }
 
 .mfp-iframe-scaler {
     width: 100%;
     height: 0;
     overflow: hidden;
-    padding-top: 56.25%;
-    position: relative !important; /* FIX: anchor close button inside frame */
+    padding-top: 56.25%
 }
 
 .mfp-iframe-scaler iframe {
