@@ -8,3 +8,17 @@ $('.menu-toggle').on("click",function(){$('#site_header').addClass('animate');$(
 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
 '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
 '</div>',patterns:{youtube:{index:'youtube.com/',id:null,src:'%id%?autoplay=1'},vimeo:{index:'vimeo.com/',id:'/',src:'//player.vimeo.com/video/%id%?autoplay=1'},gmaps:{index:'//maps.google.',src:'%id%&output=embed'}},srcAction:'iframe_src',},callbacks:{markupParse:function(template,values,item){values.title=item.el.attr('title');}},});});})(jQuery);
+
+
+// Initialize Owl Carousel with fade effect
+$('.testimonials-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: true,
+    autoplay: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 300,
+    margin: 0
+});
