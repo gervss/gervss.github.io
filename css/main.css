@@ -63,7 +63,7 @@ h6 {
 }
 
 a {
-    color: #09c;
+    color: #fb6610;
     text-decoration: none;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -1732,7 +1732,7 @@ input[type=text],
 .ajax-page-content {
     height: 100%;
     overflow: auto;
-    background-color: #fff
+    background-color: #000000
 }
 
 .ajax-page-wrapper {
@@ -1801,7 +1801,7 @@ input[type=text],
     display: block;
     position: relative;
     padding: 20px 25px 25px;
-    background-color: #fcfcfc
+    background-color: #000000
 }
 
 .ajax-page-wrapper .block-title h3 {
